@@ -1,3 +1,4 @@
+// Package lmap provides an implementation of a linked map.
 package lmap
 
 import (
