@@ -3,10 +3,10 @@ package lmap_test
 import (
 	"fmt"
 
-	"playground-1.16/dsa/lmap"
+	"github.com/nik0sc/lmap"
 )
 
-type I interface{
+type I interface {
 	F() string
 }
 

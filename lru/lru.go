@@ -3,7 +3,7 @@ package lru
 import (
 	"sync"
 
-	"playground-1.16/dsa/lmap"
+	"github.com/nik0sc/lmap"
 )
 
 type Cache struct {
@@ -19,7 +19,7 @@ func New(max int) Cache {
 
 	return Cache{
 		l:   lmap.New(),
-		mu: &sync.Mutex{},
+		mu:  &sync.Mutex{},
 		max: max,
 	}
 }
