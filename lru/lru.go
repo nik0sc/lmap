@@ -23,12 +23,12 @@ type Cache struct {
 // New creates a new Cache ready for use.
 // If max > 0, the cache will only be allowed to contain max number of entries.
 // Otherwise a default maximum number will be used.
-func New(max int) Cache {
+func New(max int) *Cache {
 	if max <= 0 {
 		max = DefaultCacheMax
 	}
 
-	return Cache{
+	return &Cache{
 		l:   lmap.New(),
 		max: max,
 	}
